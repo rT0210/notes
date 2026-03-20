@@ -7,9 +7,9 @@ const NoteDetails = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="w-160">
+    <div className="w-160 p-4">
       {user && (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 text-black">
           <input
             className="text-center text-3xl"
             value={user.title}
@@ -17,9 +17,9 @@ const NoteDetails = () => {
               dispatch(editName({ ...user, title: e.target.value }))
             }
           ></input>
-          <div className="flex justify-center">
+          <div className="flex justify-center bg-mauve-700">
             <textarea
-              className="max-h-full w-full resize-none overflow-y-hidden text-left py-2"
+              className="max-h-full w-full resize-none overflow-y-hidden text-left py-2 text-black p-2"
               rows={20}
               type="text"
               value={user.description}
