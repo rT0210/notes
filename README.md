@@ -1,16 +1,32 @@
-# React + Vite
+# React Notes — приложение для заметок о React хуках
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение для создания и хранения заметок с информацией о React хуках. Поддерживает добавление, удаление, редактирование названия и описания. Данные сохраняются в localStorage.
 
-Currently, two official plugins are available:
+## Используемые технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React** — библиотека для построения интерфейсов
+- **Redux Toolkit (RTK)** — управление глобальным состоянием (слайсы, экшены, редьюсеры)
+- **Tailwind CSS** — утилитарная стилизация
+- **localStorage** — сохранение данных в браузере
+- **Vite** — сборка проекта
 
-## React Compiler
+## Функционал
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Создание заметки (модальное окно)
+- Просмотр списка всех заметок
+- Просмотр деталей заметки при клике
+- Редактирование названия и описаления (прямо в окне деталей)
+- Удаление заметки
+- Автоматическое сохранение в localStorage
+- Счетчик количества заметок
 
-## Expanding the ESLint configuration
+## Как запустить
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Установка зависимостей
+npm install
+
+# Запуск в режиме разработки
+npm run dev
+
+# Сборка для продакшена
+npm run build
